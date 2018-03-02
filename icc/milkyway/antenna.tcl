@@ -1,0 +1,839 @@
+# ***********************************************
+# UNSAM - Universidad Nacional San Martin - 2017
+# ***********************************************
+#   Escuela de Ciencia y Tecnologia 
+#   PDK ONC5 para materias de diseno de ICs
+#      
+#       :ssssssssssoo+/-`   `-/+osssssssssss:       
+#       oMMMMMMMMMMMMMMMMmymMMMMMMMMMMMMMMMMo       
+#       oMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMo       
+#       oMMMMMd++++oosyhmMMMmhysoo++++dMMMMMo       
+#       oMMMMMy          .+.          sMMMMMo       
+#       oMMMMMs                       sMMMMMo       
+#       oMMMMMs                       sMMMMMo       
+#       oMMMMMs                       sMMMMMo       
+#       oMMMMMs                       sMMMMMo       
+#       oMMMMMs                       sMMMMMo       
+#       oMMMMMs                       sMMMMMo       
+#       oMMMMMs                       sMMMMMo       
+#       oMMMMMmyyyysso+:.   .:+ossyyyymMMMMMo       
+#       oMMMMMMMMMMMMMMMMmymMMMMMMMMMMMMMMMMo       
+#       oMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMo       
+#       -//////////++oshmMMMmhsoo+//////////-       
+#                        `/`                                                                
+# ***********************************************
+
+# Seteo el path donde esta la libreria Milkyway
+set library_path ../../icc_onc5/icc_onc5
+
+# Extraigo Propiedades de antena
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name AN21X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name AND2X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name AND3X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name AND4X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name AND5X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name AND6X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name ANTENNAN4
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name ANTENNAN5
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name ANTENNAN10
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name ANTENNAN25
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name ANTENNAP4
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name ANTENNAP5
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name ANTENNAP10
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name ANTENNAP25
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name AO21X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name AO22X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name AO31X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name AO32X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name AO222X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name BUX1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name BUX2
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name BUX3
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name BUX4
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name BUX6
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name BUX8
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name DFFX1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name DFRQX1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name DFRRSX1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name DFRRX1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name DFRX1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name DLHLX1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name DLHQLX1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name DLHRLX1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name DLHRQLX1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name DLY1LX1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name DLY1p6LX1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name DLY2LX1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name DLY4LX1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name DLY8LX1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name EO2X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name FAX1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name FEED1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name FEED2
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name FEED3
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name FEED5
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name FEED10
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name FEEDCAP2L
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name HAX1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name INX1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name INX2
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name INX4
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name INX6
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name INX8
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name LGCPX1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name LGCPX2
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name LGCPX3
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name LOGIC0
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name LOGIC1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name LSGCPX1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name LSGCPX2
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name LSGCPX3
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name LSOGCPX1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name LSOGCPX2
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name LSOGCPX3
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name MU2IX1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name MU2X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name MU4IX1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name MU4X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name NA2I1X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name NA2X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name NA3I1X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name NA3I2X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name NA3X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name NA4X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name NA4I1X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name NA4I2X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name NA4I3X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name NA5X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name NA5I1X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name NA6X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name NO2X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name NO3X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name NO4X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name NO5X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name NO6X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name OA211X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name ON32X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name OR2X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name OR3X1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report
+
+signoffHierAntenna
+setFormField signoff_hierarchical_antenna_report library_name $library_path
+setFormField signoff_hierarchical_antenna_report cell_name SDFRX1
+setFormField signoff_hierarchical_antenna_report pins_for "All Cells"
+setFormField signoff_hierarchical_antenna_report diffusion 2
+setFormField signoff_hierarchical_antenna_report poly 4
+setFormField signoff_hierarchical_antenna_report contact 8
+formOK signoff_hierarchical_antenna_report

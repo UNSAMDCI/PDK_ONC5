@@ -1,0 +1,6 @@
+#!/bin/csh
+
+setenv AServerPort 1978
+setenv sh_enable_editing on
+
+Milkyway -tcl -file data_preparation_io.tcl &

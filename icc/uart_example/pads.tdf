@@ -1,0 +1,45 @@
+set_pad_physical_constraints -side 1 -pad_name cornerUL
+set_pad_physical_constraints -side 2 -pad_name cornerUR
+set_pad_physical_constraints -side 3 -pad_name cornerLR
+set_pad_physical_constraints -side 4 -pad_name cornerLL
+
+
+
+set_pad_physical_constraints -side 1 -pad_name core_vss1        -order 1    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 1 -pad_name core_vdd1        -order 2    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 1 -pad_name core_vss2        -order 3    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 1 -pad_name core_vdd2        -order 4    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 1 -pad_name ipad_RECEIVED    -order 5    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 1 -pad_name ipad_IS_REC      -order 6    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 1 -pad_name ipad_IS_TX       -order 7    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 1 -pad_name ipad_RECV_ERROR  -order 8    -min_left_iospace 0 -min_right_iospace 0
+
+
+set_pad_physical_constraints -side 2 -pad_name ipad_RX0         -order 1    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 2 -pad_name ipad_RX1         -order 2    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 2 -pad_name ipad_RX2         -order 3    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 2 -pad_name ipad_RX3         -order 4    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 2 -pad_name ipad_RX4         -order 5    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 2 -pad_name ipad_RX5         -order 6    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 2 -pad_name ipad_RX6         -order 7    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 2 -pad_name ipad_RX7         -order 8    -min_left_iospace 0 -min_right_iospace 0
+
+
+set_pad_physical_constraints -side 3 -pad_name ipad_TX0         -order 1    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 3 -pad_name ipad_TX1         -order 2    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 3 -pad_name ipad_TX2         -order 3    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 3 -pad_name ipad_TX3         -order 4    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 3 -pad_name ipad_TX4         -order 5    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 3 -pad_name ipad_TX5         -order 6    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 3 -pad_name ipad_TX6         -order 7    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 3 -pad_name ipad_TX7         -order 8    -min_left_iospace 0 -min_right_iospace 0
+
+
+set_pad_physical_constraints -side 4 -pad_name ipad_CLK         -order 1    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 4 -pad_name ipad_RST         -order 2    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 4 -pad_name ipad_RX          -order 3    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 4 -pad_name ipad_TRANSMIT    -order 4    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 4 -pad_name ipad_TX          -order 5    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 4 -pad_name core_vdd3        -order 6    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 4 -pad_name core_vss3        -order 7    -min_left_iospace 0 -min_right_iospace 0
+set_pad_physical_constraints -side 4 -pad_name core_vdd4        -order 8    -min_left_iospace 0 -min_right_iospace 0

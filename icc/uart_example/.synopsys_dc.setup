@@ -1,0 +1,17 @@
+echo "=============================================="
+echo "UNSAM - Universidad de San Martin - 2017"
+echo "----------> ICC UART Demo"
+echo "=============================================="
+
+set target_library ../../libs/nldm_op_cond_typ.db
+set link_library "* $target_library"
+set_host_options -max_cores 4
+history keep 200
+alias area report_area
+alias h history
+alias rc "report_constraint -all_violators"
+alias rt "report_timing"
+alias check "check_design"
+alias comp "compile -area_effort high -map_effort high"
+alias optimization "compile_ultra -retime"
+#define_design_lib COMMON -path ./common

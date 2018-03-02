@@ -1,0 +1,6 @@
+definePad "PADIO" "180"
+definePad "PADVDD" "180"
+definePad "PADVSS" "180"
+definePad "CORNER" "180"
+definePad "FILLER1" "270"
+definePad "FILLER0_1" "270"
