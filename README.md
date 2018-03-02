@@ -12,6 +12,10 @@ Preliminary Version - Work in Progress
 ## Disclaimer
 This project does not contain any confidential information. You must contact MOSIS and sign the corresponding NDA to obtain the official PDK. This project is a set of libraries and scripts for use with the synopsys tools and the official PDK.
 
+## Changelog
+* Work in Progress: Analog Stuff - Documentation to generate some needed files. 
+
+
 ## Structure
 
 	dc : DC Compiler
