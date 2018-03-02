@@ -1,0 +1,46 @@
+# ***********************************************
+# UNSAM - Universidad Nacional San Martin - 2017
+# ***********************************************
+#   Escuela de Ciencia y Tecnologia 
+#   PDK ONC5 para materias de diseno de ICs
+#      
+#       :ssssssssssoo+/-`   `-/+osssssssssss:       
+#       oMMMMMMMMMMMMMMMMmymMMMMMMMMMMMMMMMMo       
+#       oMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMo       
+#       oMMMMMd++++oosyhmMMMmhysoo++++dMMMMMo       
+#       oMMMMMy          .+.          sMMMMMo       
+#       oMMMMMs                       sMMMMMo       
+#       oMMMMMs                       sMMMMMo       
+#       oMMMMMs                       sMMMMMo       
+#       oMMMMMs                       sMMMMMo       
+#       oMMMMMs                       sMMMMMo       
+#       oMMMMMs                       sMMMMMo       
+#       oMMMMMs                       sMMMMMo       
+#       oMMMMMmyyyysso+:.   .:+ossyyyymMMMMMo       
+#       oMMMMMMMMMMMMMMMMmymMMMMMMMMMMMMMMMMo       
+#       oMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMo       
+#       -//////////++oshmMMMmhsoo+//////////-       
+#                        `/`                                                                
+# ***********************************************
+
+Requirements:
+Environment variables that point to tools
+		CDESIGNER_HOME
+		HSPICE_HOME
+		MILKYWAY_HOME
+		SILICON_SMART_HOME
+		STAR_RC_HOME
+		CUSTOM_WAVE_HOME
+		PYROS
+		IC_COMPILER
+		LC_COMPILER
+		DC_COMPILER
+		ICV_HOME_DIR
+
+	Example bash config:
+		./scripts/bash/example_bash_config
+
+Run:
+	cd scripts/bash
+	./run_cdesigner
+

@@ -1,0 +1,5 @@
+*.pyc
+./scripts/bash/synopsys_custom/
+./scripts/bash/latestResults/
+.~lock*
+oa_pdk.pdf

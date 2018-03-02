@@ -1,0 +1,11 @@
+DEFINE snpsDefTechLib ${CUSTOM_COMPILER_SAMPLES}/snpsDefTechLib
+DEFINE basic ${CUSTOM_COMPILER_SAMPLES}/basic
+DEFINE analogLib ${CUSTOM_COMPILER_SAMPLES}/analogLib
+DEFINE verilogaLib ${CUSTOM_COMPILER_SAMPLES}/verilogaLib
+DEFINE sheets ${CUSTOM_COMPILER_SAMPLES}/sheets
+DEFINE sample ${CUSTOM_COMPILER_SAMPLES}/sample
+DEFINE parasitics ${CUSTOM_COMPILER_SAMPLES}/parasitics
+
+DEFINE c5 ../../kit/analog/c5
+DEFINE Basic_Cells_ONC5 ../../kit/digital/Basic_Cells_ONC5
+

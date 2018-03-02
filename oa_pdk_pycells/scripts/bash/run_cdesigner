@@ -1,0 +1,83 @@
+#!/bin/bash
+
+echo ""
+echo ""
+echo ""
+echo " ***********************************************"
+echo " UNSAM - Universidad Nacional San Martín - 2017"
+echo " ***********************************************"
+echo "  Escuela Ciencia y Técnica "
+echo "	 PDK ONC5 para materias de diseño de ICs"
+echo ""
+echo "       :ssssssssssoo+/-.   .-/+osssssssssss:  "   
+echo "       oMMMMMMMMMMMMMMMMmymMMMMMMMMMMMMMMMMo  "     
+echo "       oMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMo  "     
+echo "       oMMMMMd++++oosyhmMMMmhysoo++++dMMMMMo  "     
+echo "       oMMMMMy          .+.          sMMMMMo  "     
+echo "       oMMMMMs                       sMMMMMo  "     
+echo "       oMMMMMs                       sMMMMMo  "     
+echo "       oMMMMMs                       sMMMMMo  "     
+echo "       oMMMMMs                       sMMMMMo  "     
+echo "       oMMMMMs                       sMMMMMo  "     
+echo "       oMMMMMs                       sMMMMMo  "     
+echo "       oMMMMMs                       sMMMMMo  "      
+echo "       oMMMMMmyyyysso+:.   .:+ossyyyymMMMMMo  "     
+echo "       oMMMMMMMMMMMMMMMMmymMMMMMMMMMMMMMMMMo  "     
+echo "       oMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMo  "     
+echo "       -//////////++oshmMMMmhsoo+//////////-  "     
+echo "                        ./.                   "                                             
+echo " ***********************************************"
+echo ""
+echo ""
+echo "Check Env Variables........"
+
+# ************************************************************************************
+# Check Variables
+# ************************************************************************************
+if [ -z ${CDESIGNER_HOME+x} ];     then   echo "CDESIGNER_HOME is unset"; exit;fi
+#if [ -z ${HSPICE_HOME+x} ];        then   echo "HSPICE_HOME is unset"; exit;fi
+#if [ -z ${MILKYWAY_HOME+x} ];      then   echo "MILKYWAY_HOME is unset"; exit;fi
+#if [ -z ${SILICON_SMART_HOME+x} ]; then   echo "SILICON_SMART_HOME is unset"; exit;fi
+#if [ -z ${STAR_RC_HOME+x} ];       then   echo "STAR_RC_HOME is unset"; exit;fi
+#if [ -z ${CUSTOM_WAVE_HOME+x} ];   then   echo "CUSTOM_WAVE_HOME is unset"; exit;fi
+#if [ -z ${PYROS+x} ];              then   echo "PYROS is unset"; exit;fi
+#if [ -z ${IC_COMPILER+x} ];        then   echo "IC_COMPILER is unset"; exit;fi
+#if [ -z ${LC_COMPILER+x} ];        then   echo "LC_COMPILER is unset"; exit;fi
+#if [ -z ${DC_COMPILER+x} ];        then   echo "DC_COMPILER is unset"; exit;fi
+#if [ -z ${ICV_HOME_DIR+x} ];       then   echo "ICV_HOME_DIR is unset"; exit;fi
+
+
+
+
+# ************************************************************************************
+# PDK environment variables
+# ************************************************************************************
+export C5_ROOT_PATH="$(dirname $(dirname ${PWD}))"
+export C5_PDK_PATH=../../kit/analog/c5
+export c5_calibre_path=$C5_ROOT_PATH/calibre/
+export TECH_PATH=.
+
+
+################################################################################################
+# Custom Compiler
+################################################################################################
+export CUSTOM_COMPILER_SAMPLES=${CDESIGNER_HOME}/auxx/samples
+
+################################################################################################
+# PYCELL STUDIO (set your CNI_ROOT path)
+################################################################################################
+
+CNI_ROOT=${CDESIGNER_HOME}/linux64/PyCellStudio;export CNI_ROOT 
+CNI_DISPLAY_DIR=${TECH_PATH}/;export CNI_DISPLAY_DIR
+OA_COMPILER=gcc44x;export OA_COMPILER
+CNI_PLAT_ROOT=${CNI_ROOT}/plat_linux_gcc483_64
+PATH=${CNI_PLAT_ROOT}/3rd/bin:${CNI_PLAT_ROOT}/3rd/oa/bin/linux_rhel40_gcc44x_64/opt:${CNI_PLAT_ROOT}/bin:${CNI_ROOT}/bin:${PATH};export PATH
+CNI_LOG_DEFAULT=/dev/null;export CNI_LOG_DEFAULT
+PYTHONHOME=${CNI_PLAT_ROOT}/3rd;export PYTHONHOME
+PYTHONPATH=${CNI_ROOT}/pylib:${CNI_PLAT_ROOT}/pyext:${CNI_PLAT_ROOT}/lib:.:${ANALOG_PATH}:${PYTHONPATH};export PYTHONPATH
+LD_LIBRARY_PATH=${CNI_PLAT_ROOT}/3rd/lib:${CNI_PLAT_ROOT}/3rd/oa/lib/linux_rhel40_gcc44x_64/opt:${CNI_PLAT_ROOT}/lib:${LD_LIBRARY_PATH};export LD_LIBRARY_PATH
+OA_PLUGIN_PATH=${CNI_PLAT_ROOT}/3rd/oa/data/plugins:${CNI_ROOT}/quickstart:${OA_PLUGIN_PATH};export OA_PLUGIN_PATH
+
+
+
+cdesigner -command "source ../cdesigner/init/init.tcl" &
