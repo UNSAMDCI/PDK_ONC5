@@ -1,0 +1,36 @@
+* File: INX8.pex.netlist
+* Created: Fri Jun 30 08:18:53 2017
+* Program "Calibre xRC"
+* Version "v2017.2_28.22"
+* 
+.include "INX8.pex.netlist.pex"
+.subckt INX8  D_VDD D_GND OUT IN
+* 
+* IN	IN
+* OUT	OUT
+* D_GND	D_GND
+* D_VDD	D_VDD
+M_ENM1 N_OUT_M_ENM1_d N_IN_M_ENM1_g N_D_GND_M_ENM1_s N_D_GND_M_ENM1_b enm
++ L=6e-07 W=3.2e-06 AD=3.84e-12 AS=3.84e-12 PD=8.8e-06 PS=8.8e-06 NRD=0.375
++ NRS=0.375
+M_ENM1@2 N_OUT_M_ENM1@2_d N_IN_M_ENM1@2_g N_D_GND_M_ENM1@2_s N_D_GND_M_ENM1_b
++ enm L=6e-07 W=3.2e-06 AD=3.84e-12 AS=3.84e-12 PD=8.8e-06 PS=8.8e-06 NRD=0.375
++ NRS=0.375
+M_EPM1 N_OUT_M_EPM1_d N_IN_M_EPM1_g N_D_VDD_M_EPM1_s N_D_VDD_M_EPM1_b epm
++ L=6e-07 W=3e-06 AD=2.19375e-12 AS=3.6e-12 PD=4.5e-06 PS=8.4e-06 NRD=0.24375
++ NRS=0.4
+M_EPM1@4 N_OUT_M_EPM1_d N_IN_M_EPM1@4_g N_D_VDD_M_EPM1@4_s N_D_VDD_M_EPM1_b epm
++ L=6e-07 W=3.4e-06 AD=2.48625e-12 AS=2.21e-12 PD=5.1e-06 PS=4.7e-06
++ NRD=0.215074 NRS=0.191176
+M_EPM1@3 N_OUT_M_EPM1@3_d N_IN_M_EPM1@3_g N_D_VDD_M_EPM1@4_s N_D_VDD_M_EPM1_b
++ epm L=6e-07 W=3.4e-06 AD=2.48625e-12 AS=2.21e-12 PD=5.1e-06 PS=4.7e-06
++ NRD=0.215074 NRS=0.191176
+M_EPM1@2 N_OUT_M_EPM1@3_d N_IN_M_EPM1@2_g N_D_VDD_M_EPM1@2_s N_D_VDD_M_EPM1_b
++ epm L=6e-07 W=3e-06 AD=2.19375e-12 AS=3.6e-12 PD=4.5e-06 PS=8.4e-06
++ NRD=0.24375 NRS=0.4
+*
+.include "INX8.pex.netlist.INX8.pxi"
+*
+.ends
+*
+*

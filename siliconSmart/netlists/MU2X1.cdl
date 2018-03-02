@@ -1,0 +1,21 @@
+* HSPICE netlist generated with ICnet by 'unsam' on Thu Nov 10 2016 at 08:50:32
+
+*
+* MAIN CELL: Component pathname : $BASIC_CELLS_ONC5/D_CELLS/MU2X1
+*
+.subckt MU2X1  Q D_GND D_VDD IN0 IN1 S
+
+        M_EPM6 Q N_4_ESC1 D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_ENM6 Q N_4_ESC1 D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_EPM5 CLK1 S D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_ENM5 CLK1 S D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_EPM4 N_25_ESC2 IN1 D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_EPM3 N_4_ESC1 CLK1 N_25_ESC2 D_VDD epm w=1.6u l=0.6u m=1 mult=1
+        M_ENM4 N_21_ESC3 IN1 D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_ENM3 N_4_ESC1 S N_21_ESC3 D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_EPM2 N_2_ESC4 IN0 D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_EPM1 N_4_ESC1 S N_2_ESC4 D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_ENM2 N_6_ESC5 IN0 D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_ENM1 N_4_ESC1 CLK1 N_6_ESC5 D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+.ends MU2X1
+

@@ -1,0 +1,27 @@
+* HSPICE netlist generated with ICnet by 'unsam' on Fri Mar 31 2017 at 08:49:13
+
+*
+* MAIN CELL: Component pathname : $BASIC_CELLS_ONC5/D_CELLS/NA6X1
+*
+.subckt NA6X1  OUT A B C D D_GND D_VDD E F
+
+        M_ENM9 N_165_ESC1 F D_GND D_GND enm w=2.3u l=0.6u m=1 mult=1 
+        M_EPM9 OUT2 F D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_EPM8 OUT1 E D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM8 N_137_ESC2 E D_GND D_GND enm w=2.3u l=0.6u m=1 mult=1 
+        M_ENM7 OUT N_108_ESC3 D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM4 OUT2 C D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_EPM3 OUT2 D D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM3 N_106_ESC4 B N_137_ESC2 D_GND enm w=2.3u l=0.6u m=1 mult=1
+        M_ENM1 OUT1 A N_106_ESC4 D_GND enm w=2.3u l=0.6u m=1 mult=1 
+        M_EPM2 OUT1 A D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_EPM1 OUT1 B D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_EPM7 OUT N_108_ESC3 D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_EPM5 N_108_ESC3 OUT2 N_122_ESC5 D_VDD epm w=6.4u l=0.6u m=1 mult=1  
+        M_ENM6 N_108_ESC3 OUT2 D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_ENM4 N_115_ESC6 D N_165_ESC1 D_GND enm w=2.3u l=0.6u m=1 mult=1  
+        M_ENM2 OUT2 C N_115_ESC6 D_GND enm w=2.3u l=0.6u m=1 mult=1 
+        M_ENM5 N_108_ESC3 OUT1 D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM6 N_122_ESC5 OUT1 D_VDD D_VDD epm w=6.4u l=0.6u m=1 mult=1 
+.ends NA6X1
+

@@ -1,0 +1,21 @@
+* HSPICE netlist generated with ICnet by 'unsam' on Mon Oct 24 2016 at 10:38:25
+
+*
+* MAIN CELL: Component pathname : $BASIC_CELLS_ONC5/D_CELLS/AO21X1
+*
+.subckt AO21X1  D_GND D_VDD OUT A B C
+
+        M_ENM6 OUT N_32_ESC1 D_GND D_GND enm w=1u l=0.6u m=1 mult=1 region=1
+        M_EPM6 OUT N_32_ESC1 D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_ENM5 N_32_ESC1 C D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_ENM4 N_32_ESC1 AND_O D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_EPM5 N_21_ESC2 AND_O D_VDD D_VDD epm w=3.2u l=0.6u m=1 mult=1 region=1
+        M_EPM4 N_32_ESC1 C N_21_ESC2 D_VDD epm w=3.2u l=0.6u m=1 mult=1 region=1
+        M_EPM3 AND_O N_2_ESC3 D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_ENM3 AND_O N_2_ESC3 D_GND D_GND enm w=1u l=0.6u m=1 mult=1 region=1
+        M_ENM2 N_7_ESC4 B D_GND D_GND enm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_ENM1 N_2_ESC3 A N_7_ESC4 D_GND enm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_EPM2 N_2_ESC3 A D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_EPM1 N_2_ESC3 B D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+.ends AO21X1
+

@@ -1,0 +1,25 @@
+* File: LOGIC0.pex.netlist
+* Created: Thu Jun 22 09:01:41 2017
+* Program "Calibre xRC"
+* Version "v2017.2_28.22"
+* 
+.include "LOGIC0.pex.netlist.pex"
+.subckt LOGIC0  D_VDD D_GND Q
+* 
+* Q	Q
+* D_GND	D_GND
+* D_VDD	D_VDD
+R_NPOR1 N_noxref_4_R_NPOR1_pos N_D_GND_R_NPOR1_neg nd w=9e-07 l=4.5e-06  
++ nsq=5
+R_NPOR1@3 N_noxref_4_R_NPOR1@3_pos N_noxref_5_R_NPOR1@3_neg nd w=9e-07
++ l=4.5e-06   nsq=5
+R_NPOR1@2 N_Q_R_NPOR1@2_pos N_noxref_5_R_NPOR1@2_neg nd w=9e-07 l=4.5e-06  
++ nsq=5
+M_EPM1 N_D_VDD_M_EPM1_d N_D_VDD_M_EPM1_g N_Q_M_EPM1_s N_D_VDD_M_EPM1_b epm
++ L=2.3e-06 W=3e-06 AD=3.6e-12 AS=3.6e-12 PD=8.4e-06 PS=8.4e-06 NRD=0.4 NRS=0.4
+*
+.include "LOGIC0.pex.netlist.LOGIC0.pxi"
+*
+.ends
+*
+*

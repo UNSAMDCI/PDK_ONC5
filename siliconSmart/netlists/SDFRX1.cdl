@@ -1,0 +1,45 @@
+* HSPICE netlist generated with ICnet by 'unsam' on Mon Oct 24 2016 at 11:05:21
+
+*
+* MAIN CELL: Component pathname : $BASIC_CELLS_ONC5/D_CELLS/SDFRX1
+*
+.subckt SDFRX1  D_GND D_VDD Q QN D ICLK SD SE
+
+        M_EPM13 N_63_ESC1 NSE D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_EPM12 N_7_ESC2 SD N_63_ESC1 D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_EPM11 N_65_ESC3 SE D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_ENM13 N_4_ESC4 SD N_55_ESC5 D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_ENM12 N_55_ESC5 SE D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_ENM18 QN SQI D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_EPM17 Q NSQI D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1 
+        M_ENM17 Q NSQI D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1 
+        M_EPM16 NCLK ICLK D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_EPM15 CLK NCLK D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_ENM15 CLK NCLK D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_EPM14 NSE SE D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1 
+        M_ENM14 NSE SE D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1 
+        M_ENM11 N_1_ESC6 NSE D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_EPM18 QN SQI D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_ENM16 NCLK ICLK D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_EPM10 SQI NSQI D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_ENM10 SQI NSQI D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_ENM9 N_20_ESC7 SQI D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_EPM9 N_22_ESC8 SQI D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_EPM8 NSQI CLK N_22_ESC8 D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_ENM8 NSQI NCLK N_20_ESC7 D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_ENM7 N_16_ESC9 MQI D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_EPM7 N_18_ESC10 MQI D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_EPM6 NSQI NCLK N_18_ESC10 D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_ENM6 NSQI CLK N_16_ESC9 D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_EPM5 MQI NMQI D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_ENM5 MQI NMQI D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_ENM4 N_10_ESC11 MQI D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_EPM4 N_12_ESC12 MQI D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_EPM3 NMQI NCLK N_12_ESC12 D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_ENM3 NMQI CLK N_10_ESC11 D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_ENM2 N_4_ESC4 D N_1_ESC6 D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_EPM2 N_7_ESC2 D N_65_ESC3 D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_EPM1 NMQI CLK N_7_ESC2 D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_ENM1 NMQI NCLK N_4_ESC4 D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+.ends SDFRX1
+

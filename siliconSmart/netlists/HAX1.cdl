@@ -1,0 +1,39 @@
+* HSPICE netlist generated with ICnet by 'unsam' on Wed Jan 25 2017 at 09:44:59
+
+*
+* MAIN CELL: Component pathname : $BASIC_CELLS_ONC5/D_CELLS/HAX1
+*
+.subckt HAX1  CO S D_GND D_VDD A B
+
+        M_EPM3 N_54_ESC1 A D_VDD D_VDD epm w=3.2u l=0.6u m=1 mult=1 
+        M_EPM2 OL B N_54_ESC1 D_VDD epm w=3.2u l=0.6u m=1 mult=1 
+        M_EPM1 OL ANDOUT D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM3 OL ANDOUT N_52_ESC2 D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_ENM2 N_52_ESC2 B D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_ENM1 N_52_ESC2 A D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        X_INV2 CO D_GND D_VDD ANDOUT / INV
+        X_INV1 S D_GND D_VDD OL / INV
+        X_NAND21 ANDOUT D_GND D_VDD A B / NAND2
+*
+* Component pathname : $BASIC_CELLS_ONC5/D_CELLS/GATES/inv
+*
+.subckt INV  OUT D_GND D_VDD IN
+
+        M_ENM1 OUT IN D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1
+        M_EPM1 OUT IN D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+.ends INV
+
+*
+* Component pathname : $BASIC_CELLS_ONC5/D_CELLS/GATES/nand2
+*
+.subckt NAND2  Q D_GND D_VDD A B
+
+        M_ENM2 N_12_ESC3 B D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_ENM1 Q A N_12_ESC3 D_GND enm w=0.8u l=0.6u m=1 mult=1
+        M_EPM2 Q B D_VDD D_VDD epm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM1 Q A D_VDD D_VDD epm w=0.8u l=0.6u m=1 mult=1 
+.ends NAND2
+
+.ends HAX1
+
+

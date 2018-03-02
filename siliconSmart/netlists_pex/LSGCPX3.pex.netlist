@@ -1,0 +1,32 @@
+* HSPICE netlist generated with ICnet by 'unsam' on Mon Jul  3 2017 at 08:44:07
+
+*
+* MAIN CELL: Component pathname : $PRUEBA/D_CELLS/LSGCPX1
+*
+.subckt LSGCPX3  GCLK D_GND D_VDD CLK E SE
+
+        M_EPM12 N_260_ESC1 E D_VDD D_VDD epm w=3.2u l=0.6u m=1 mult=1 
+        M_ENM11 N_210_ESC2 E D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_ENM12 N_210_ESC2 SE D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM11 N_210_ESC2 SE N_260_ESC1 D_VDD epm w=3.2u l=0.6u m=1 mult=1
+        M_ENM1 CN CI D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM9 NOSE2 CLK D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_EPM8 NOSE2 NOSE D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_EPM7 NOSE CN N_209_ESC3 D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM6 NOSE CI N_212_ESC4 D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_ENM5 N_212_ESC4 N_210_ESC2 D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1
+        M_EPM6 N_209_ESC3 N_210_ESC2 D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1
+        M_ENM4 NOSE CN N_198_ESC5 D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM5 NOSE CI N_197_ESC6 D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM3 N_198_ESC5 N_219_ESC7 D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1
+        M_EPM4 N_197_ESC6 N_219_ESC7 D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1
+        M_ENM2 N_219_ESC7 NOSE D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM2 N_219_ESC7 NOSE D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM8 NOSE2 NOSE N_231_ESC8 D_GND enm w=1.6u l=0.6u m=1 mult=1 
+        M_EPM1 CN CI D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM7 CI CLK D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM3 CI CLK D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM10 GCLK NOSE2 D_GND D_GND enm w=2.4u l=0.6u m=1 mult=1 
+        M_EPM10 GCLK NOSE2 D_VDD D_VDD epm w=4.8u l=0.6u m=1 mult=1 
+        M_ENM9 N_231_ESC8 CLK D_GND D_GND enm w=1.6u l=0.6u m=1 mult=1 
+.ends LSGCPX1

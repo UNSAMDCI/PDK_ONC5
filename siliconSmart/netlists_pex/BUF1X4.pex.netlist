@@ -1,0 +1,29 @@
+* File: BUF1X4.pex.netlist
+* Created: Thu Jul 13 08:21:19 2017
+* Program "Calibre xRC"
+* Version "v2017.2_28.22"
+* 
+.include "BUF1X4.pex.netlist.pex"
+.subckt BUF1X4  D_VDD D_GND OUT IN
+* 
+* IN	IN
+* OUT	OUT
+* D_GND	D_GND
+* D_VDD	D_VDD
+M_ENM1 N_N$2_M_ENM1_d N_IN_M_ENM1_g N_D_GND_M_ENM1_s D_GND enm L=6e-07 W=8e-07
++ AD=1.37e-12 AS=8e-13 PD=4.8e-06 PS=1.84e-06 NRD=2.14062 NRS=1.25
+M_ENM2 N_OUT_M_ENM2_d N_N$2_M_ENM2_g N_D_GND_M_ENM1_s D_GND enm L=6e-07
++ W=3.2e-06 AD=3.84e-12 AS=3.2e-12 PD=8.8e-06 PS=7.36e-06 NRD=0.375 NRS=0.3125
+M_EPM1 N_N$2_M_EPM1_d N_IN_M_EPM1_g N_D_VDD_M_EPM1_s D_VDD epm L=6e-07 W=1.6e-06
++ AD=1.92e-12 AS=1.408e-12 PD=5.6e-06 PS=3.072e-06 NRD=0.75 NRS=0.55
+M_EPM2 N_OUT_M_EPM2_d N_N$2_M_EPM2_g N_D_VDD_M_EPM1_s D_VDD epm L=6e-07
++ W=3.4e-06 AD=2.48625e-12 AS=2.992e-12 PD=5.1e-06 PS=6.528e-06 NRD=0.215074
++ NRS=0.258824
+M_EPM2@2 N_OUT_M_EPM2_d N_N$2_M_EPM2@2_g N_D_VDD_M_EPM2@2_s D_VDD epm L=6e-07
++ W=3e-06 AD=2.19375e-12 AS=3.6e-12 PD=4.5e-06 PS=8.4e-06 NRD=0.24375 NRS=0.4
+*
+.include "BUF1X4.pex.netlist.BUF1X4.pxi"
+*
+.ends
+*
+*

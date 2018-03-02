@@ -1,0 +1,5 @@
+#!/bin/bash
+
+lc_shell -f create_db/ccs_pex.tcl
+lc_shell -f create_db/nldm_pex.tcl
+lc_shell -f create_db/my_model_pex.tcl

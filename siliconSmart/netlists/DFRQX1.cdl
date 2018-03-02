@@ -1,0 +1,35 @@
+* HSPICE netlist generated with ICnet by 'unsam' on Mon Oct 24 2016 at 11:03:45
+
+*
+* MAIN CELL: Component pathname : $BASIC_CELLS_ONC5/D_CELLS/DFRQX1
+*
+.subckt DFRQX1  Q D D_GND D_VDD ICLK
+
+        M_EPM14 Q NSQI D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1 
+        M_ENM14 Q NSQI D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1 
+        M_EPM12 CLK NCLK D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_ENM12 CLK NCLK D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_EPM11 NCLK ICLK D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_ENM11 NCLK ICLK D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_EPM10 SQI NSQI D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_ENM10 SQI NSQI D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_ENM9 N_20_ESC1 SQI D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_EPM9 N_22_ESC2 SQI D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_EPM8 NSQI CLK N_22_ESC2 D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_ENM8 NSQI NCLK N_20_ESC1 D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_ENM7 N_16_ESC3 MQI D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_EPM7 N_18_ESC4 MQI D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_EPM6 NSQI NCLK N_18_ESC4 D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_ENM6 NSQI CLK N_16_ESC3 D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_EPM5 MQI NMQI D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_ENM5 MQI NMQI D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_ENM4 N_10_ESC5 MQI D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_EPM4 N_12_ESC6 MQI D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_EPM3 NMQI NCLK N_12_ESC6 D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_ENM3 NMQI CLK N_10_ESC5 D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_ENM2 N_4_ESC7 D D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_EPM2 N_7_ESC8 D D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_EPM1 NMQI CLK N_7_ESC8 D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_ENM1 NMQI NCLK N_4_ESC7 D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+.ends DFRQX1
+

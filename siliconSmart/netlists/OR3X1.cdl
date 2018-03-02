@@ -1,0 +1,17 @@
+* HSPICE netlist generated with ICnet by 'unsam' on Fri Mar 31 2017 at 09:03:44
+
+*
+* MAIN CELL: Component pathname : $BASIC_CELLS_ONC5/D_CELLS/OR3X1
+*
+.subckt OR3X1  OUT D_GND D_VDD A B C
+
+        M_EPM3 N_104_ESC1 C N_106_ESC2 D_VDD epm w=4.8u l=0.6u m=1 mult=1
+        M_EPM1 OUT N_104_ESC1 D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM6 N_104_ESC1 C D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_ENM5 N_104_ESC1 B D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_ENM4 N_104_ESC1 A D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM2 N_101_ESC3 A D_VDD D_VDD epm w=4.8u l=0.6u m=1 mult=1 
+        M_ENM1 OUT N_104_ESC1 D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM5 N_106_ESC2 B N_101_ESC3 D_VDD epm w=4.8u l=0.6u m=1 mult=1
+.ends OR3X1
+

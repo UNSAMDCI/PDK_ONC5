@@ -1,0 +1,10 @@
+* HSPICE netlist generated with ICnet by 'unsam' on Thu Jan  5 2017 at 08:45:10
+
+*
+* MAIN CELL: Component pathname : $BASIC_CELLS_ONC5/D_CELLS/FEEDCAP2L
+*
+.subckt FEEDCAP2L  D_GND D_VDD
+
+        C_PIPCPM1 D_VDD D_GND pp w=10u l=7.45u m=1
+.ends FEEDCAP2L
+

@@ -1,0 +1,21 @@
+* HSPICE netlist generated with ICnet by 'unsam' on Wed Feb  1 2017 at 11:41:53
+
+*
+* MAIN CELL: Component pathname : $BASIC_CELLS_ONC5/D_CELLS/DLY8LX1
+*
+.subckt DLY8LX1  Q D_GND D_VDD D
+
+        M_ENM5 NOSE N_155_ESC1 D_GND D_GND enm w=0.8u l=2.8u m=1 mult=1 
+        M_EPM6 NOSE N_155_ESC1 D_VDD D_VDD epm w=1.6u l=2.8u m=1 mult=1 
+        M_ENM4 N_155_ESC1 N_156_ESC2 D_GND D_GND enm w=0.8u l=2.8u m=1 mult=1
+        M_EPM5 N_155_ESC1 N_156_ESC2 D_VDD D_VDD epm w=1.6u l=2.8u m=1 mult=1
+        M_ENM3 Q N_146_ESC3 D_GND D_GND enm w=2.4u l=0.6u m=1 mult=1 
+        M_EPM4 Q N_146_ESC3 D_VDD D_VDD epm w=4.8u l=0.6u m=1 mult=1 
+        M_ENM2 N_146_ESC3 NOSE D_GND D_GND enm w=0.8u l=2.8u m=1 mult=1 
+        M_EPM2 N_146_ESC3 NOSE D_VDD D_VDD epm w=1.6u l=2.8u m=1 mult=1 
+        M_ENM1 N_156_ESC2 N_7_ESC4 D_GND D_GND enm w=0.8u l=2.8u m=1 mult=1
+        M_EPM1 N_156_ESC2 N_7_ESC4 D_VDD D_VDD epm w=1.6u l=2.8u m=1 mult=1
+        M_ENM7 N_7_ESC4 D D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM3 N_7_ESC4 D D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+.ends DLY8LX1
+

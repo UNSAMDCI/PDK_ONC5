@@ -1,0 +1,15 @@
+
+
+********************************************************************************
+* Library          : SiS_Demo_my
+* Cell             : INVX1
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt INX1 D_VDD D_GND OUT IN
+  m_epm1 OUT IN D_VDD D_VDD epm w=1.6u l=0.6u 
+  m_enm1 OUT IN D_GND D_GND enm w=1.6u l=0.6u 
+.ends INX1
+
+

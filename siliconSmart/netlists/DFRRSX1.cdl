@@ -1,0 +1,45 @@
+* HSPICE netlist generated with ICnet by 'unsam' on Wed Jan 25 2017 at 09:08:13
+
+*
+* MAIN CELL: Component pathname : $BASIC_CELLS_ONC5/D_CELLS/DFRRSX1
+*
+.subckt DFRRSX1  Q QN D D_GND D_VDD ICLK RN SN
+
+        M_EPM18 SQI SN D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM18 N_61_ESC1 SN D_GND D_GND enm w=1.5u l=0.6u m=1 mult=1 
+        M_EPM17 MQI SN D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM17 N_50_ESC2 SN D_GND D_GND enm w=1.5u l=0.6u m=1 mult=1 
+        M_ENM14 Q NSQI D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM13 QN SQI D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM13 QN SQI D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM12 CLK NCLK D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM12 CLK NCLK D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_ENM11 NCLK ICLK D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM11 NCLK ICLK D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_EPM10 SQI NSQI D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM10 SQI NSQI N_61_ESC1 D_GND enm w=1.5u l=0.6u m=1 mult=1 
+        M_ENM9 N_24_ESC3 SQI N_22_ESC4 D_GND enm w=0.8u l=0.6u m=1 mult=1
+        M_EPM9 N_26_ESC5 SQI D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_EPM8 NSQI CLK N_26_ESC5 D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM8 NSQI NCLK N_24_ESC3 D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_ENM7 N_19_ESC6 MQI N_22_ESC4 D_GND enm w=0.8u l=0.6u m=1 mult=1
+        M_EPM7 N_21_ESC7 MQI D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_EPM6 NSQI NCLK N_21_ESC7 D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM6 NSQI CLK N_19_ESC6 D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM5 MQI NMQI D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM5 MQI NMQI N_50_ESC2 D_GND enm w=1.5u l=0.6u m=1 mult=1 
+        M_ENM4 N_12_ESC8 MQI N_9_ESC9 D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM4 N_14_ESC10 MQI D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_EPM3 NMQI NCLK N_14_ESC10 D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM3 NMQI CLK N_12_ESC8 D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_ENM2 N_4_ESC11 D N_9_ESC9 D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM2 N_7_ESC12 D D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_EPM1 NMQI CLK N_7_ESC12 D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM1 NMQI NCLK N_4_ESC11 D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM16 NSQI RN D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM16 N_22_ESC4 RN D_GND D_GND enm w=1.6u l=0.6u m=1 mult=1 
+        M_EPM15 NMQI RN D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM15 N_9_ESC9 RN D_GND D_GND enm w=1.6u l=0.6u m=1 mult=1 
+        M_EPM14 Q NSQI D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+.ends DFRRSX1
+

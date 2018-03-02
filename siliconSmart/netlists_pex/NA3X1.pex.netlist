@@ -1,0 +1,32 @@
+* File: NA3X1.pex.netlist
+* Created: Mon Jun  5 13:11:32 2017
+* Program "Calibre xRC"
+* Version "v2017.1_17.12"
+* 
+.include "NA3X1.pex.netlist.pex"
+.subckt NA3X1  D_VDD OUT D_GND A B C
+* 
+* C	C
+* B	B
+* A	A
+* D_GND	D_GND
+* OUT	OUT
+* D_VDD	D_VDD
+M_ENM1 N_OUT_M_ENM1_d N_A_M_ENM1_g N$7 D_GND enm L=6e-07 W=2.4e-06 AD=2.88e-12
++ AS=7.2e-13 PD=7.2e-06 PS=3e-06 NRD=0.5 NRS=0.125
+M_ENM2 N$7 N_B_M_ENM2_g N$16 D_GND enm L=6e-07 W=2.4e-06 AD=7.2e-13 AS=7.2e-13
++ PD=3e-06 PS=3e-06 NRD=0.125 NRS=0.125
+M_ENM3 N$16 N_C_M_ENM3_g N_D_GND_M_ENM3_s D_GND enm L=6e-07 W=2.4e-06 AD=7.2e-13
++ AS=2.88e-12 PD=3e-06 PS=7.2e-06 NRD=0.125 NRS=0.5
+M_EPM2 N_OUT_M_EPM2_d N_A_M_EPM2_g N_D_VDD_M_EPM2_s D_VDD epm L=6e-07 W=2.4e-06
++ AD=2.88e-12 AS=1.56e-12 PD=7.2e-06 PS=3.7e-06 NRD=0.5 NRS=0.270833
+M_EPM1 N_OUT_M_EPM1_d N_B_M_EPM1_g N_D_VDD_M_EPM2_s D_VDD epm L=6e-07 W=2.4e-06
++ AD=1.56e-12 AS=1.56e-12 PD=3.7e-06 PS=3.7e-06 NRD=0.270833 NRS=0.270833
+M_EPM3 N_OUT_M_EPM1_d N_C_M_EPM3_g N_D_VDD_M_EPM3_s D_VDD epm L=6e-07 W=2.4e-06
++ AD=1.56e-12 AS=2.88e-12 PD=3.7e-06 PS=7.2e-06 NRD=0.270833 NRS=0.5
+*
+.include "NA3X1.pex.netlist.NA3X1.pxi"
+*
+.ends
+*
+*

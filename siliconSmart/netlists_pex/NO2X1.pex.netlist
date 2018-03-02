@@ -1,0 +1,27 @@
+* File: NO2X1.pex.netlist
+* Created: Mon Jun  5 13:13:58 2017
+* Program "Calibre xRC"
+* Version "v2017.1_17.12"
+* 
+.include "NO2X1.pex.netlist.pex"
+.subckt NO2X1  D_VDD D_GND OUT A B
+* 
+* B	B
+* A	A
+* OUT	OUT
+* D_GND	D_GND
+* D_VDD	D_VDD
+M_ENM1 N_OUT_M_ENM1_d N_A_M_ENM1_g N_D_GND_M_ENM1_s N_D_GND_M_ENM1_b enm L=6e-07
++ W=8e-07 AD=7.65e-13 AS=1.37e-12 PD=2.6e-06 PS=4.8e-06 NRD=1.19531 NRS=2.14062
+M_ENM2 N_OUT_M_ENM1_d N_B_M_ENM2_g N_D_GND_M_ENM2_s N_D_GND_M_ENM1_b enm L=6e-07
++ W=8e-07 AD=7.65e-13 AS=1.37e-12 PD=2.6e-06 PS=4.8e-06 NRD=1.19531 NRS=2.14062
+M_EPM2 N$14 N_A_M_EPM2_g N_D_VDD_M_EPM2_s D_VDD epm L=6e-07 W=3.2e-06 AD=9.6e-13
++ AS=3.84e-12 PD=3.8e-06 PS=8.8e-06 NRD=0.09375 NRS=0.375
+M_EPM1 N_OUT_M_EPM1_d N_B_M_EPM1_g N$14 D_VDD epm L=6e-07 W=3.2e-06 AD=3.84e-12
++ AS=9.6e-13 PD=8.8e-06 PS=3.8e-06 NRD=0.375 NRS=0.09375
+*
+.include "NO2X1.pex.netlist.NO2X1.pxi"
+*
+.ends
+*
+*

@@ -1,0 +1,38 @@
+* HSPICE netlist generated with ICnet by 'unsam' on Fri Mar 31 2017 at 08:37:30
+
+*
+* MAIN CELL: Component pathname : $BASIC_CELLS_ONC5/D_CELLS/MU4X1
+*
+.subckt MU4X1  Q D_GND D_VDD IN0 IN1 IN2 IN3 S0 S1
+
+        M_EPM12 O0 CLK0 N_48_ESC1 D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM13 N_44_ESC2 IN1 D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_ENM12 O0 S0 N_44_ESC2 D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM11 N_41_ESC3 IN0 D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_EPM10 O0 S0 N_41_ESC3 D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM11 N_37_ESC4 IN0 D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_ENM10 O0 CLK0 N_37_ESC4 D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_ENM9 N_30_ESC5 O1 D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_ENM8 Q S1 N_30_ESC5 D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM7 CLK1 S1 D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM7 CLK1 S1 D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM8 Q CLK1 N_33_ESC6 D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_EPM9 N_33_ESC6 O1 D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_EPM5 CLK0 S0 D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM5 CLK0 S0 D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM4 N_15_ESC7 IN3 D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_EPM3 O1 CLK0 N_15_ESC7 D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM4 N_11_ESC8 IN3 D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_ENM3 O1 S0 N_11_ESC8 D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM2 N_8_ESC9 IN2 D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_EPM1 O1 S0 N_8_ESC9 D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM2 N_4_ESC10 IN2 D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_ENM1 O1 CLK0 N_4_ESC10 D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM17 N_54_ESC11 O0 D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_EPM16 Q S1 N_54_ESC11 D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM17 N_51_ESC12 O0 D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_ENM16 Q CLK1 N_51_ESC12 D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM13 N_48_ESC1 IN1 D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+
+.ends MU4X1
+

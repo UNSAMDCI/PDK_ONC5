@@ -1,0 +1,10 @@
+* HSPICE netlist generated with ICnet by 'unsam' on Thu Jan  5 2017 at 08:12:32
+
+*
+* MAIN CELL: Component pathname : $BASIC_CELLS_ONC5/D_CELLS/LOGIC0
+*
+.subckt LOGIC0  D_GND D_VDD Q
+        M_EPM1 D_VDD D_VDD Q D_VDD epm w=3u l=2.3u m=1 mult=1 
+		R_NPOR1 Q D_GND nd l=4.5u w=0.9u ns=3 m=1
+.ends LOGIC0
+

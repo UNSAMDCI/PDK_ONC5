@@ -1,0 +1,19 @@
+* HSPICE netlist generated with ICnet by 'unsam' on Mon Oct 24 2016 at 10:36:47
+
+*
+* MAIN CELL: Component pathname : $BASIC_CELLS_ONC5/D_CELLS/AN21X1
+*
+.subckt AN21X1  D_GND D_VDD OUT A B C
+
+        M_ENM2 N_18_ESC1 B D_GND D_GND enm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_ENM1 N_13_ESC2 A N_18_ESC1 D_GND enm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_EPM2 N_13_ESC2 A D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_EPM1 N_13_ESC2 B D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_EPM4 OUT C N_25_ESC3 D_VDD epm w=3.2u l=0.6u m=1 mult=1 region=1
+        M_ENM4 OUT NAND_O D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_ENM5 OUT C D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_EPM3 NAND_O N_13_ESC2 D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_ENM3 NAND_O N_13_ESC2 D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_EPM5 N_25_ESC3 NAND_O D_VDD D_VDD epm w=3.2u l=0.6u m=1 mult=1 region=1
+.ends AN21X1
+

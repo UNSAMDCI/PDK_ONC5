@@ -1,0 +1,22 @@
+* File: INX1.pex.netlist
+* Created: Mon Jun  5 11:46:40 2017
+* Program "Calibre xRC"
+* Version "v2017.1_17.12"
+* 
+.include "INX1.pex.netlist.pex"
+.subckt INX1  D_VDD D_GND OUT IN
+* 
+* IN	IN
+* OUT	OUT
+* D_GND	D_GND
+* D_VDD	D_VDD
+M_ENM1 N_OUT_M_ENM1_d N_IN_M_ENM1_g N_D_GND_M_ENM1_s D_GND enm L=6e-07 W=8e-07
++ AD=1.37e-12 AS=1.37e-12 PD=4.8e-06 PS=4.8e-06 NRD=2.14062 NRS=2.14062
+M_EPM1 N_OUT_M_EPM1_d N_IN_M_EPM1_g N_D_VDD_M_EPM1_s D_VDD epm L=6e-07 W=1.6e-06
++ AD=1.92e-12 AS=1.92e-12 PD=5.6e-06 PS=5.6e-06 NRD=0.75 NRS=0.75
+*
+.include "INX1.pex.netlist.INX1.pxi"
+*
+.ends
+*
+*

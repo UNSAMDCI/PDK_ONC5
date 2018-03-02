@@ -1,0 +1,21 @@
+* HSPICE netlist generated with ICnet by 'unsam' on Wed Nov 16 2016 at 10:02:18
+
+*
+* Component pathname : $BASIC_CELLS_ONC5/D_CELLS/EO2X1
+*
+.subckt EO2X1  Z D_GND D_VDD A B
+
+        M_ENM6 N_30_ESC1 B D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_ENM5 Z A N_30_ESC1 D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_ENM4 N_32_ESC2 BB D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_ENM3 Z AB N_32_ESC2 D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_ENM2 BB B D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1
+        M_ENM1 AB A D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 region=1 
+        M_EPM6 BB B D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1 
+        M_EPM5 AB A D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1 
+        M_EPM4 Z B N_18_ESC3 D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1 
+        M_EPM3 Z A N_18_ESC3 D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1 
+        M_EPM2 N_18_ESC3 AB D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+        M_EPM1 N_18_ESC3 BB D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 region=1
+.ends EO2X1
+

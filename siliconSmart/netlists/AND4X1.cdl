@@ -1,0 +1,21 @@
+* HSPICE netlist generated with ICnet by 'unsam' on Fri Mar 31 2017 at 08:16:21
+
+*
+* MAIN CELL: Component pathname : $BASIC_CELLS_ONC5/D_CELLS/AND4X1
+*
+.subckt AND4X1  OUT A B C D D_GND D_VDD
+
+        M_EPM6 N_65_ESC1 OUT1 D_VDD D_VDD epm w=6.4u l=0.6u m=1 mult=1 
+        M_EPM5 OUT OUT2 N_65_ESC1 D_VDD epm w=6.4u l=0.6u m=1 mult=1 
+        M_ENM6 OUT OUT2 D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_ENM5 OUT OUT1 D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_ENM4 N_49_ESC2 D D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_ENM2 OUT2 C N_49_ESC2 D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM4 OUT2 C D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_EPM3 OUT2 D D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_EPM1 OUT1 B D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM1 OUT1 A N_17_ESC3 D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM2 OUT1 A D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM3 N_17_ESC3 B D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+.ends AND4X1
+

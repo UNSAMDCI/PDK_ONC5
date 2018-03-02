@@ -1,0 +1,13 @@
+* HSPICE netlist generated with ICnet by 'unsam' on Wed Feb  1 2017 at 09:58:05
+
+*
+* MAIN CELL: Component pathname : $BASIC_CELLS_ONC5/D_CELLS/BUX6
+*
+.subckt BUX6  D_GND D_VDD OUT IN
+
+        M_EPM2 OUT N_2_ESC1 D_VDD D_VDD epm w=2.4u l=0.6u m=12 mult=12 
+        M_ENM2 OUT N_2_ESC1 D_GND D_GND enm w=1.2u l=0.6u m=12 mult=12 
+        M_EPM1 N_2_ESC1 IN D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM1 N_2_ESC1 IN D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+.ends BUX6
+

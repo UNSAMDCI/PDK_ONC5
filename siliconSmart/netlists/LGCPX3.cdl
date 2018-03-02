@@ -1,0 +1,29 @@
+* HSPICE netlist generated with ICnet by 'unsam' on Thu Jan  5 2017 at 15:23:26
+
+*
+* MAIN CELL: Component pathname : $BASIC_CELLS_ONC5/D_CELLS/LGCPX3
+*
+.subckt LGCPX3  GCLK D_GND D_VDD CLK E
+
+        M_ENM10 GCLK NAND_OUT D_GND D_GND enm w=1.4u l=0.6u m=1 mult=1
+        M_EPM10 GCLK NAND_OUT D_VDD D_VDD epm w=2.75u l=0.6u m=1 mult=1 
+        M_ENM9 N_31_ESC1 CLK D_GND D_GND enm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM8 NAND_OUT ENABLE N_31_ESC1 D_GND enm w=1.6u l=0.6u m=1 mult=1
+        M_EPM9 NAND_OUT CLK D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_EPM8 NAND_OUT ENABLE D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM6 EN_LATCHED CI N_23_ESC2 D_GND enm w=0.8u l=0.6u m=1 mult=1
+        M_EPM7 EN_LATCHED CN N_20_ESC3 D_VDD epm w=1.6u l=0.6u m=1 mult=1
+        M_ENM5 N_23_ESC2 E D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM6 N_20_ESC3 E D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM4 EN_LATCHED CN N_15_ESC4 D_GND enm w=0.8u l=0.6u m=1 mult=1
+        M_EPM5 EN_LATCHED CI N_13_ESC5 D_VDD epm w=1.6u l=0.6u m=1 mult=1
+        M_ENM3 N_15_ESC4 ENABLE D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM4 N_13_ESC5 ENABLE D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM2 ENABLE EN_LATCHED D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1
+        M_EPM2 ENABLE EN_LATCHED D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1
+        M_ENM1 CN CI D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM1 CN CI D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+        M_ENM7 CI CLK D_GND D_GND enm w=0.8u l=0.6u m=1 mult=1 
+        M_EPM3 CI CLK D_VDD D_VDD epm w=1.6u l=0.6u m=1 mult=1 
+.ends LGCPX3
+
