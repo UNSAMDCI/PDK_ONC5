@@ -18,42 +18,31 @@ Celdas Basicas ONC5
 	icc / gds : 
 		std cells gds format
 
-## Santana Tech generation
+## TLUPlus : File generation
 
-* We have to use the techfile (.tf) to generate SantanaTech and Santana Display File
+* If the Foundry provides an .nxtgrd file (in the PDK),  it already contains the necessary things to assemple the .itf file. If we look at the beginning of the .nxtgrd file, it is written similarly to an .itf file and contains all the information we need.
 
-* SantanaTech generation (c5.tf is the techfile in this case)
-
-```
-	cntechconv c5.tf -o Santana.tech
-```
-
-* Santana Display from SantanaTech
+* In order to get the .itf file we run the following script:
 
 ```
-	cndispconv
-     --cdstech = <cds-tech-file-name>
-     --cdsdisplay = <cds-display-file-name>
-     --santanatech = <santana-tech-file-name>
+	# Find only lines that begin with a comment character
+	# Delete everything from the pattern "end of itf file" to the end of the file
+	# Delete everything from the pattern "TimeStamp" to the pattern "echoing ITF file"
+	# From what is remaining, which is the .itf file commented out, remove the first comment character
+ 
+	grep '^\$' some.nxtgrd | \
+      	sed -e '/end of itf file/,/$$/d' \
+            -e '/TimeStamp/,/echoing ITF file/d' \
+            -e 's/^\$//'
 ```
 
-For this process:
+* Then we have to generate the TLU File using .itf
 
 ```
-cndispconv --cdstech=c5.tf –-cdsdisplay=display.drf
---santanatech=santana.tech
+	grdgenxo -itf2TLUPlus -i cb_mini_max.itf -o cb_mini_max.capTable
 ```
 
-## OA Library generation
-
-* We can update the library from the pdk using the following command:
-
-```
-cngenlib --update pkg:MyPyCells c5 <original_library_path>
-```
-
-MyPycells is the folder which contain the pycells
-c5 is the library to generate. You must define the path in lib.defs
+* Once generated the TLUPlus, put it in ** PDK_ONC5/libs** folder.
 
 ## Example
 
