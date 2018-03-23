@@ -49,6 +49,61 @@ cndispconv --cdstech=c5.tf –-cdsdisplay=display.drf
 --santanatech=santana.tech
 ```
 
+
+## Santana Tech file changes
+
+* In **layerMaterials** section, add **POLY2  poly**:
+
+```
+	layerMaterials(
+;( layer  material )
+;( -----  -------- )
+ ( CNT    cut      )
+ ( DIF    nDiff    )
+ ( M1     metal    )
+ ( M2     metal    )
+ ( M3     metal    )
+ ( POLY1  poly     )
+ ( POLY2  poly     )
+ ( TUB    nWell    )
+ ( VIA    cut      )
+ ( VIA2   cut      )
+);layerMaterials
+```
+
+* In **connectivity**, add **connectBy(M1 POLY2 CNT)**:
+
+```
+connectivity(
+; connectivity-statement(layer-parameters)
+; ----------------------------------------
+  connectBy(M1 M2 VIA)
+  connectBy(M1 POLY1 CNT)
+  connectBy(M1 POLY2 CNT)
+  connectBy(M2 M3 VIA2)
+  logicalConnect(M1 M1)
+  logicalConnect(M2 M2)
+  logicalConnect(POLY1 POLY1)
+  logicalConnect(M3 M3)
+);connectivity
+
+```
+
+* In **viaLayers**, add **( POLY2         CNT        M1        )**:
+
+```
+viaLayers(
+;( bottom-layer  via-layer  top-layer )
+;( ------------  ---------  --------- )
+ ( DIF           CNT        M1        )
+ ( M1            VIA        M2        )
+ ( M2            VIA2       M3        )
+ ( POLY1         CNT        M1        )
+ ( POLY2         CNT        M1        )
+);viaLayers
+```
+
+
 ## OA Library generation
 
 * We can update the library from the pdk using the following command:
