@@ -4,7 +4,7 @@ Preliminary Version - Work in Progress
 
 ## Authors ##
 * Leandro Tozzi ltozzi@unsam.edu.ar
-* Yao-Ming Kuo ykuo@frba.utn.edu.ar
+* Yao-Ming Kuo yaomingk93@gmail.com / yaokuo@est.frba.utn.edu.ar
 * Leandro Arana larana@fi.uba.com.ar
 * Cristian Marchese cmarchese@est.frba.utn.edu.ar
 * Luis Seva lseva@est.frba.utn.edu.ar

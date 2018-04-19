@@ -54,4 +54,6 @@ Celdas Basicas ONC5
 
 	source icc_run.tcl > log.log
 
+* icc_run is an example to validate the IC digital flow
 
+![icc_example](../doc/img/icc_example.jpeg "Example")
