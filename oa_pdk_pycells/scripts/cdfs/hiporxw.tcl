@@ -1,7 +1,7 @@
 # ***********************************************
 # UNSAM - Universidad Nacional San Martin - 2017
 # ***********************************************
-#   Escuela de Ciencia y Tecnologia 
+#   Escuela Ciencia y Tecnica 
 #   PDK ONC5 para materias de diseno de ICs
 #      
 #       :ssssssssssoo+/-`   `-/+osssssssssss:       
@@ -219,7 +219,7 @@ proc loadParams_hiporxw {libName {cellName {}} {overwrite 1} {forceMaster 0}} {
         -type symbol                                                            \
         -data $data                                                             \
         -section netlist                                                        \
-        -netlister auCdl                                                        \
+        -netlister hspiceD                                                        \
         -info simInfo                                                           \
         -forceMaster $forceMaster                            
 
@@ -315,7 +315,7 @@ proc loadParams_hiporxw {libName {cellName {}} {overwrite 1} {forceMaster 0}} {
         -forceMaster $forceMaster                                              
 
     db::setNetlistInfo termOrder                                               	\
-        -value {(PLUS MINUS)}                                                  	\
+        -value {(PLUS MINUS SUB)}                                                  	\
         -type list                                                             	\
         -data $data                                                            	\
         -section netlist                                                       	\

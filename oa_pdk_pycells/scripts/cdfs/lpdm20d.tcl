@@ -1,7 +1,7 @@
 # ***********************************************
 # UNSAM - Universidad Nacional San Martin - 2017
 # ***********************************************
-#   Escuela de Ciencia y Tecnologia 
+#   Escuela Ciencia y Tecnica 
 #   PDK ONC5 para materias de diseno de ICs
 #      
 #       :ssssssssssoo+/-`   `-/+osssssssssss:       
