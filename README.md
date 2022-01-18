@@ -4,10 +4,28 @@ Preliminary Version - Work in Progress
 
 ## Authors ##
 * Leandro Tozzi ltozzi@unsam.edu.ar
-* Yao-Ming Kuo yaomingk93@gmail.com / yaokuo@est.frba.utn.edu.ar
+* Yao-Ming Kuo yaomingk93@gmail.com 
 * Leandro Arana larana@fi.uba.com.ar
 * Cristian Marchese cmarchese@est.frba.utn.edu.ar
 * Luis Seva lseva@est.frba.utn.edu.ar
+
+## Citations
+
+In papers and reports, please refer to this work as follows: 
+
+```  
+@INPROCEEDINGS{8399907,
+  author={Kuo, Yao-Ming and Arana, Leandro J. and Seva, Luis and Marchese, Cristian and Tozzi, Leandro},
+  booktitle={2018 IEEE 9th Latin American Symposium on Circuits   Systems (LASCAS)}, 
+  title={Educational design kit for synopsys tools with a set of characterized standard cell library}, 
+  year={2018},
+  volume={},
+  number={},
+  pages={1-4},
+  doi={10.1109/LASCAS.2018.8399907}}
+  }
+```
+
 
 ## Disclaimer
 This project does not contain any confidential information. You must contact MOSIS and sign the corresponding NDA to obtain the official PDK. This project is a set of libraries and scripts for use with the synopsys tools and the official PDK.
